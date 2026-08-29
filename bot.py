@@ -52,7 +52,7 @@ async def process_buy(callback_query: types.CallbackQuery):
 
 @dp.callback_query(lambda c: c.data == "avito_buy")
 async def process_avito(callback_query: types.CallbackQuery):
-    link = "https://www.avito.ru/user/933dea3a19580010f241e515abd5c204/profile?src=sharing"
+    link = "https://www.avito.ru/user/68751186e6db0b6b413ef5f1eefc29c1/profile?src=sharing"
     await callback_query.message.edit_text(f"Оформите заказ здесь: {link}")
 
 @dp.callback_query(lambda c: c.data == "city_buy")
